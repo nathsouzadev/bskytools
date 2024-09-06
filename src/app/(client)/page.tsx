@@ -10,7 +10,6 @@ import {
 } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
 import { useEffect, useRef, useState } from 'react';
-import { Linkedin } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Label } from '@radix-ui/react-label';
 import Link from 'next/link';
@@ -60,11 +59,12 @@ const Home = () => {
     setPosts((prevPosts) =>
       prevPosts.map((post) =>
         post.id === id
-          ? {
-              ...post,
-              content: editText,
-              timestamp: new Date().toLocaleString() + ' (edited)',
-            }
+          ? 
+          {
+            ...post,
+            content: editText,
+            timestamp: new Date().toLocaleString() + ' (edited)',
+          }
           : post,
       ),
     );
@@ -86,7 +86,7 @@ const Home = () => {
     try {
       textareaRef.current?.scrollIntoView({ behavior: 'smooth' });
       textareaRef.current?.focus();
-      const response = await fetch('/api/bsky', {
+      await fetch('/api/bsky', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

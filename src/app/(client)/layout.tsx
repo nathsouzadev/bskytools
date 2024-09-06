@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: 'Ferramentas para o BlueSky',
 };
 
-export default function RootLayout({
+export default function RootLayout ({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -22,9 +22,9 @@ export default function RootLayout({
           defaultTheme='dark'
           disableTransitionOnChange
         >
-        {children}
+          {children}
         </ThemeProvider>
-        </body>
+      </body>
     </html>
   );
 }

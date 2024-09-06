@@ -5,7 +5,7 @@ const agent = new AtpAgent({
   service: 'https://bsky.social',
 });
 
-export async function POST(req: Request) {
+export async function POST (req: Request) {
   try {
     const body = await req.json();
 
