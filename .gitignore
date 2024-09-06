@@ -1,0 +1,44 @@
+# Node.js files
+
+node_modules/
+.yarn/ # If using yarn
+.github/
+
+# Build output
+
+.next/
+out/ # Optional, if using a build tool like `tsc`
+
+# Testing frameworks (adjust based on your choices)
+
+jest/cache/
+coverage/
+
+# IDE or editor files
+
+# Adjust based on your specific IDE
+
+.idea/
+.vscode/
+
+# Temporary files
+
+.tmp/
+/.swc
+
+# Local environment variables
+
+.env.local
+.env
+
+# Editor drafts and back-ups
+
+_.swp
+_.swo
+
+# OS specific
+
+# Adjust based on your OS
+
+Thumbs.db
+.DS_Store

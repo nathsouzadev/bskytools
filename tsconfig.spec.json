@@ -1,0 +1,6 @@
+{
+  "exclude": [
+    "./__tests__/**/*.spec.ts",
+    "./__tests__/**/*.spec.tsx",
+  ]
+}
