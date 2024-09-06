@@ -117,7 +117,7 @@ const Home = () => {
           <h1 className='text-2xl font-bold'>ThreadSky</h1>
           <div className='flex space-x-4'>
             <a
-              href='https://github.com'
+              href='https://github.com/nathsouzadev/bskytools'
               target='_blank'
               rel='noopener noreferrer'
               aria-label='GitHub'
